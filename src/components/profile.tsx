@@ -47,8 +47,9 @@ const Profile: React.FC = () => {
   const handlePhoneChange = (value: string) => {
     setPhone(value);
   };
-
+  
   const handleSubmit = (e: React.FormEvent) => {
+    console.log("button clickkkk")
     e.preventDefault();
     const updatedUser = {
       email,
