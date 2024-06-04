@@ -22,7 +22,7 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<User>(() => {
     try {
       const savedUser = localStorage.getItem('user');
-      return savedUser ? JSON.parse(savedUser) : { email: '', password: '', name: '', address: '' };
+      return savedUser ? JSON.parse(savedUser) : { email: '', password: '', name: '', address: ''  };
     } catch (error) {
       console.error('Error parsing user data from localStorage:', error);
       return { email: '', password: '', name: '', address: '' };

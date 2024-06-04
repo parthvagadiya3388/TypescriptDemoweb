@@ -53,7 +53,7 @@ const Forbuissness: React.FC = () => {
 
       existingData.push(values);
 
-      localStorage.setItem('formData', JSON.stringify(existingData));
+      localStorage.setItem('formData', JSON.stringify(existingData)); 
 
       resetForm();
     }

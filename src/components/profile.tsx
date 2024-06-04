@@ -17,13 +17,15 @@ import ProfileHeader from './profile-header';
 import { AuthContext } from '../context/AuthContext';
 
 const Profile: React.FC = () => {
-  const { user } = useContext(AuthContext);
+  const { user , setUser } = useContext(AuthContext);
+  
   const [email, setEmail] = useState<string>('');
   const [firstName, setFirstName] = useState<string>('');
   const [lastName, setLastName] = useState<string>('');
   const [address, setAddress] = useState<string>('');
   const [phone, setPhone] = useState<string>('');
   const [position, setPosition] = useState<string>('');
+  const [password , setPassword] = useState<string>('')
 
   useEffect(() => {
     setEmail(user.email);
@@ -33,8 +35,9 @@ const Profile: React.FC = () => {
     setAddress(user.address);
     setPhone(user.phone);
     setPosition(user.position);
+    setPassword(user.password);
   }, [user]);
-
+  
   const handleInputChange = (setter: React.Dispatch<React.SetStateAction<string>>) => {
     return (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       setter(e.target.value);
@@ -45,7 +48,23 @@ const Profile: React.FC = () => {
     setPhone(value);
   };
 
-  // const fullname = `${firstName} ${lastName}`;
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const updatedUser = {
+      email,
+      name: `${firstName} ${lastName}`,
+      address,
+      phone,
+      position,
+      password,
+    };
+    setUser(updatedUser);
+
+    const existingData = JSON.parse(localStorage.getItem('formData') || '[]');
+    const updatedData = existingData.map((item: any) => item.email === user.email ? updatedUser : item);
+    localStorage.setItem('formData', JSON.stringify(updatedData));
+  };
+
 
   return (
     <>
@@ -260,7 +279,7 @@ const Profile: React.FC = () => {
                   </Col>
                 </div>
                 <div className="container text-end">
-                  <Button className="Submit_button p-2" variant="primary">
+                  <Button className="Submit_button p-2" variant="primary" onClick={handleSubmit}>
                     Update
                   </Button>
                 </div>
