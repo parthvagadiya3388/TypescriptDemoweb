@@ -1,0 +1,490 @@
+/* html, body, #root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+} */
+
+
+/* ------------------------------------------------------------------------ */
+
+.fa-solid{
+  color: #0A79D9;
+}
+p{
+  color: #474749;
+}
+.Wel_img{
+  width: 100% !important;
+  height: 500px;
+  object-fit: cover;
+}
+.main_card{
+  margin-top: 10%;
+}
+@media only screen and (max-width: 1200px) {
+  .Wel_img{
+    width: 100% !important;
+    height: 500px;
+    object-fit: cover;
+  } 
+  
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  }
+ 
+}
+@media only screen and (max-width: 700px) {
+  .Wel_img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  .main_card{
+    margin-top: 10px;
+  }
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  } 
+}
+
+@media only screen and (max-width: 800px) {
+  .Wel_img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    margin-top: 40px !important;
+  }
+  .main_card{
+    margin-top: 10px;
+  }
+
+  .Cave_image{
+    width: 80%;
+  }
+
+  .Cave_image{
+    width: 91% !important;
+    height: 385px !important;
+    margin-left: 22px !important;
+    margin-top: 30px !important;
+    object-fit: cover !important;
+    padding: 10px !important;
+  }
+  .Full_Container{
+    margin-top: 10px !important;
+  }
+  .Col1_div{
+    background-color: #E7EEFB;
+    height: 450px !important;
+  }
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+  .Wel_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px !important;
+  }
+  .main_card{
+    margin-top: 10px;
+  }
+  .button_div{
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 10px;
+  }
+  .Cave_image{
+    width: 100% !important;
+    height: 350px !important;
+    margin-left: 1px !important;
+    margin-top: 23px !important;
+    object-fit: cover !important;
+    padding: 10px !important;
+  }
+  .Full_Container{
+    margin-top: 20px !important;
+  }
+
+
+  .Footer_Conteiner{
+    margin-top: 15px;
+  }
+  .Footer_col{
+    text-align: center;
+  }
+  .Footer_col2{
+    text-align: center;
+  }
+  .togl_card{
+    width: 290px !important;
+    margin-left: 0px !important;
+  }
+
+}
+
+.Submit_button{
+  border-radius: 0px !important;
+}
+
+/* ------------------------------------------------------- */
+
+.Col1_div{
+  background-color: #E7EEFB;
+  height: 400px;
+}
+.button_div{   
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 300px) {
+ 
+  .button_div{
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 10px;
+  }
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  }
+
+}
+@media only screen and (max-width: 350px) {
+ 
+  .button_div{
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 10px;
+  }
+  .Account_button{
+    margin-top: 10px;
+    margin-left: 0px !important;
+  }
+  .Cave_image{
+    width: 100% !important;
+    height: 350px !important;
+    margin-left: 1px !important;
+    margin-top: 23px !important;
+    object-fit: cover !important;
+    padding: 10px !important;
+  }
+  .Full_Container{
+    margin-top: 20px !important;
+  }
+  .modal-content{
+    width: auto;
+    height: auto;
+  }
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  }
+}
+
+.Cave_image{
+  width: 75%;
+  height: 440px;
+  margin-left: 115px;
+  margin-top: -80px;
+  object-fit: cover;
+}
+.Full_Container{
+  margin-top: 90px;
+}
+
+.modal-content{
+  width: 360px !important;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .modal-content {
+    width: 300px !important;
+  }
+
+  #mobile_button{
+    width: 150px;
+    font-size: small;
+    margin-top: 10px;
+    /* margin-left: -10px; */
+  }
+
+  .togl_card{
+    width: 299px !important;
+    margin-left: 0px !important;
+  }
+
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  }
+
+   /* .About_image_col{
+    width: 100%;
+    height: 820px !important;
+  }
+   */
+   .Work_button{
+    width: 100% !important;
+  }
+  
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.footer_things{
+  color: #C1C1C1;
+  font: lighter;
+}
+
+.togl_card{
+  width: 450px;
+  margin-left: -60px;
+}
+
+@media (min-width: 768px) { 
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  }
+  .Wel_img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .main_card{
+    margin-top: 10px;
+  }
+  .Footer_Conteiner{
+    margin-top: 20px !important;
+  }
+  .About_image_col{
+    width: 100%;
+    height: 820px !important;
+  }
+  
+}
+
+/* ----------------------------------------------------------------------about us---------------------------------- */
+
+.About_image_col{
+  width: 100%;
+  height: 600px;
+}
+.About_Image_div{
+  background-color: #E7EEFB;
+}
+
+.About_image{
+  width: 90%;
+  height: 130%;
+  align-content: center;
+  margin-left: 35px;
+  margin-top: -60px;
+}
+.list_item{
+  margin-top: 66px;
+  align-items: center;
+}
+.List_ul{
+  list-style: none;
+}
+
+@media (min-width: 1100px) { 
+  .About_image_col{
+    height: 600px !important;
+  }
+}
+@media (max-width: 568px) { 
+  .About_image_col{
+    height: 830px !important;
+  }
+  .About_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+}
+
+/* --------------------------------------------------------------------busssiness page------------------------------------------ */
+
+.Bus_img{
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.react-tel-input .form-control{
+  width: 100% !important;
+  height: 38px !important;
+  border-radius: 0px !important;
+  border: 1px solid #dee2e6 !important;
+}
+.flag-dropdown {
+  background-color: #F8F9FA !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+.Error_Msg{
+  color: red;
+}
+.radius{
+  border-radius: 0px !important;
+}
+.navbar-nav .nav-link.active {
+  font-weight: bold !important;
+}
+
+.Work_button{
+  width: 50%;
+}
+
+/*---------------------------------------------- map page ------------------------------------------------- */
+
+.product_image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .product_card_body_div{
+  height: 170px;
+} */
+.Product_imag_div{
+  height: 150px;
+}
+.dropdown_search{
+  border: #ffffff !important;
+  border-radius: 0px !important;
+}
+
+.border_radias{
+  border-radius: 0px !important;
+}
+.drops_radis{
+  border-radius: 50px !important;
+}
+.drops_Filter{
+  border-radius: 50px !important;
+  background-image: url(/src/assets/images/filter.png) !important;
+}
+
+/* -----------------------profile -------------------------------------------------------------- */
+
+
+.Profile_Side_bar{
+  background-color: #E2E8F7;
+  border: 1px solid #a9bced;
+}
+.Product_imag_profile{
+  width: 140px !important;
+  height: 140px !important;
+}
+@media only screen and (max-width: 575px) {
+  .Product_imag_profile{
+    margin: auto;
+  }
+  .Prof_name{
+    width: 100%;
+    text-align: center;
+  }
+  .Prof_compnay_name{
+    text-align: center;
+  }
+  .Profile_button_div{
+    
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+/* -----------------------------------------------emplloye list --------------------------- */
+
+
+
+.main {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+  border-radius: 0px !important;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.Input_button_emp{
+  width: 49% !important;
+}
+@media only screen and (max-width: 365px) {
+
+  .Input_button_emp{
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+
+  .Input_button_emp{
+    width: 101% !important;
+  }
+ 
+}
+.Table_header{
+  background-color: #E2E8F7;
+}
+.List_card{
+  border-radius: 0px !important;
+  border-color: #a9bced !important;
+}
+
+/* -----------------------------order conformation --------------------------------------------- */
+
+.HRtage{
+  border: 2px dashed #a9bced;
+}
+.Payment_card{
+  background-color: #E2E8F7;
+}
+
+.Oder_coupun{
+  border-radius:  0px !important;
+  background-color: #bed3e9 !important;
+  border: 2px dotted #a9bced !important;
+}
+.Payment_delet_button{
+  background-color: rgb(240, 229, 229);
+}
+.Back_button{
+  border-radius: 20px !important;
+  margin-bottom: 15px !important;
+}
+
+.Card_Credit{
+  background-color: #E2E8F7 !important;
+}
+
+/* --------------------------------prfile silde bar -------------------- */
+
+
+.listGroup_profile{
+  background-color: #E2E8F7 !important;
+}
