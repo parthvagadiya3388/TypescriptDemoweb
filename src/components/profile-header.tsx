@@ -3,32 +3,39 @@ import { Button, Col, Container, Offcanvas, Row, ListGroup } from 'react-bootstr
 import { FaCaretDown, FaSignOutAlt } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import img4 from '../assets/images/profile.jpeg'; 
-import { useDispatch, useSelector } from 'react-redux';
 import { AuthContext } from '../context/AuthContext';
-import { setFirstName, setLastName } from '../redux/reducer/nameSlice';
-import { RootState } from '../redux/store';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { setFirstName, setLastName } from '../redux/reducer/nameSlice';
+// import { RootState } from '../redux/store';
+import usePersonStore from '../zustand/store';
 
 interface Props {}
 
 const ProfileHeader: React.FC<Props> = () => {
+
+  const {firstName , lastName , updateFirstName , updateLastName} = usePersonStore();
+
+  console.log("---first last name -::::" , firstName,lastName);
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const dispatch = useDispatch();
-  const firstName = useSelector((state: RootState) => state.name.firstName);
-  const lastName = useSelector((state: RootState) => state.name.lastName);
+  // const dispatch = useDispatch();
+  // const firstName = useSelector((state: RootState) => state.name.firstName);
+  // const lastName = useSelector((state: RootState) => state.name.lastName);
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
     if (user && user.name) {
       const [first, last] = user.name.split(' ');
-      dispatch(setFirstName(first));
-      dispatch(setLastName(last));
+      // dispatch(setFirstName(first));
+      // dispatch(setLastName(last));
+      updateFirstName(first);
+      updateLastName(last);
     }
-  }, [user, dispatch]);
+  }, [user]);
   
   const fullname = `${firstName} ${lastName}`;
 

@@ -16,6 +16,7 @@ import Employelist from "./components/employee-list";
 import Searchpage from "./components/search-page";
 import OrderConform from "./components/order-conform";
 import { ProductProvider } from "./context/Productcontext";
+import Counter from "./zustand/counter";
 
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
               <Route path="/search" element={<Searchpage/>} />
               <Route path="/order" element={<OrderConform/>} />
 
-
+              <Route path="/counter" element={<Counter/>} />
 
               <Route path="/footer" element={<Footer />} />
             </Routes>
