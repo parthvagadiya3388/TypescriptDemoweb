@@ -17,6 +17,8 @@ import Searchpage from "./components/search-page";
 import OrderConform from "./components/order-conform";
 import { ProductProvider } from "./context/Productcontext";
 import Counter from "./zustand/counter";
+// import BearCounter from "./zustand/BearCounter";
+// import Controls from "./zustand/Controls";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
       <div className="App">
         <header>
           {/* <Navbar /> */}
+          {/* <BearCounter/> */}
+          {/* <Controls/> */}
         </header>
         <ProductProvider>
           <AuthProvider>

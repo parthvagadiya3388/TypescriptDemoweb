@@ -33,7 +33,7 @@ const initialEmployees: Employee[] = [
 
 const Employelist: React.FC = () => {
   const [employees, setEmployees] = useState<Employee[]>(initialEmployees);
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);          
   const [searchInput, setSearchInput] = useState("");
 
   const handleClose = () => setShow(false);
@@ -103,7 +103,7 @@ const Employelist: React.FC = () => {
                 </Form.Group>
               </Col>
 
-              <Col md={6}>
+              <Col md={12}>
                 <Form.Group className="mb-3">
                   <Form.Label>
                     <strong>Position</strong>
@@ -117,7 +117,7 @@ const Employelist: React.FC = () => {
                 </Form.Group>
               </Col>
 
-              <Col md={6}>
+              {/* <Col md={6}>
                 <Form.Group className="mb-3">
                   <Form.Label>
                     <strong>Access</strong>
@@ -128,7 +128,7 @@ const Employelist: React.FC = () => {
                     <option value="denied">Denied</option>
                   </Form.Select>
                 </Form.Group>
-              </Col>
+              </Col> */}
             </div>
           </Form><br />
 

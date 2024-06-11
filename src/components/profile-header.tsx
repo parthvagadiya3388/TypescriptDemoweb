@@ -11,11 +11,11 @@ import usePersonStore from '../zustand/store';
 
 interface Props {}
 
-const ProfileHeader: React.FC<Props> = () => {
+const ProfileHeader: React.FC<Props> = () => {  
 
   const {firstName , lastName , updateFirstName , updateLastName} = usePersonStore();
 
-  console.log("---first last name -::::" , firstName,lastName);
+  // console.log("---first last name -::::" , firstName,lastName);
 
   const [show, setShow] = useState(false);
 

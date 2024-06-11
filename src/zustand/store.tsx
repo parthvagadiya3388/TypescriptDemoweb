@@ -1,8 +1,8 @@
 import { create } from 'zustand'
 
 type State = {
-  firstName: string
-  lastName: string
+  firstName: string;
+  lastName: string;
   count: number;
   increase: () => void;
   decrease: () => void;
@@ -22,6 +22,7 @@ const usePersonStore = create<State & Action>((set) => ({
   increase: () => set((state) => ({ count: state.count + 1 })),
   decrease: () => set((state) => ({ count: state.count - 1 })),
 }))
+
 
 // interface StoreState {
 //   count: number;
